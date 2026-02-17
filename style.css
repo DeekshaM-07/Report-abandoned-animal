@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #d1fff0, #f0fffa);
+  text-align: center;
+  padding: 40px 15px;
+  color: #333;
+}
+
+/* HEADINGS */
+h1 {
+  color: #1f4f6f;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #204d3a;
+  margin-top: 40px;
+}
+
+/* INTRO TEXT */
+p {
+  font-size: 17px;
+  color: #555;
+  max-width: 650px;
+  margin: 15px auto 30px;
+  line-height: 1.6;
+}
+
+/* BUTTONS */
+button {
+  background: linear-gradient(135deg, #28a745, #239c55);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* FORM */
+form {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 520px;
+  margin: 30px auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+input,
+textarea,
+select {
+  width: 95%;
+  padding: 12px 14px;
+  font-size: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.15);
+}
+
+textarea {
+  height: 110px;
+  resize: none;
+}
+
+/* REPORT CARDS */
+.report {
+  background: white;
+  padding: 18px;
+  margin: 18px auto;
+  max-width: 520px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  animation: fadeIn 0.4s ease;
+}
+
+.report img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.report h3 {
+  margin: 5px 0;
+  color: #1f4f6f;
+}
+
+.report p {
+  font-size: 15px;
+  margin: 8px 0;
+}
+
+/* STATUS BADGES */
+.report strong {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  background: #e0f7ea;
+  color: #1e7e34;
+}
+
+/* MAP */
+#map {
+  margin: 30px auto;
+  max-width: 700px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.badge.normal {
+  background: #e0f7ea;
+  color: #1e7e34;
+}
+
+.badge.injured {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.badge.critical {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+body.dark {
+  background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
+  color: #eee;
+}
+
+body.dark form,
+body.dark .report {
+  background: #2f2f2f;
+  color: #eee;
+}
+
+body.dark input,
+body.dark textarea,
+body.dark select {
+  background: #3a3a3a;
+  color: white;
+  border-color: #555;
+}
+
+body.dark h1,
+body.dark h2 {
+  color: #90ee90;
+}
+
+#reports {
+  margin-top: 20px;
+}
+
+#toggleTheme {
+  margin-top: 15px;
+  background: #444;
+}
+
+#toggleTheme:hover {
+  background: #222;
+}

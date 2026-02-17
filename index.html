@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Abandoned Animal Reporting</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+<body>
+
+  <h1>🐾 Report an Abandoned Animal</h1>
+  <button id="toggleTheme">🌙 Dark Mode</button>
+
+
+  <p>
+    Use this website to report abandoned or injured animals so help can reach them faster.
+  </p>
+
+  <form id="reportForm">
+    <h2>Report an Animal</h2>
+<input type="text" id="location" placeholder="📍 Location" required>
+
+<textarea id="description" placeholder="📝 Describe the animal" required></textarea>
+
+<input type="file" id="image" accept="image/*">
+
+<select id="urgency">
+  <option value="Normal">🟢 Normal</option>
+  <option value="Injured">🟡 Injured</option>
+  <option value="Critical">🔴 Critical</option>
+</select>
+<button type="button" id="detectLocation">Use My Location</button>
+
+
+
+    <button type="submit">Submit Report</button>
+  </form>
+  <p id="successMsg" style="display:none; color:green;">
+  ✅ Report submitted successfully!
+</p>
+
+
+  <h2>Reported Animals</h2>
+  <div id="reports"></div>
+
+  <h2>Animal Reports Map</h2>
+
+   <div id="map" style="height: 300px; border-radius: 12px;"></div>
+ 
+
+  <script src="script.js"></script>
+</body>
+</html>
