@@ -59,4 +59,3 @@ This project helps create awareness and provides a simple way for people to subm
 
 **Deeksha Mohan**
 
-Frontend Developer | Data & AI Enthusiast
